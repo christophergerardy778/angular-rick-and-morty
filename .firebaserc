@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "angular-ssr-eb46f": {
+      "hosting": {
+        "RickAndMorty": [
+          "angular-ssr-eb46f"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "angular-ssr-eb46f"
+  }
+}

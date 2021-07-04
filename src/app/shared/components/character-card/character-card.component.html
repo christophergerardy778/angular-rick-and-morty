@@ -1,0 +1,53 @@
+<div class="card">
+  <div class="row">
+    <div class="col-xs-12 col-md-6">
+      <img class="card-image" [src]="character.image"  [alt]="character.name">
+    </div>
+
+    <div class="col-xs-12 col-md-6 container-card">
+      <div class="row shared">
+        <div class="col-xs-12 col-md-12">
+          <div class="card-text-item">
+            <p class="card-text card-text-label">Name</p>
+            <p class="card-text">{{ character.name }}</p>
+          </div>
+        </div>
+
+        <div class="col-xs-12 col-md-6">
+          <div class="card-text-item">
+            <p class="card-text card-text-label">Gender</p>
+            <p class="card-text">{{ character.gender }}</p>
+          </div>
+        </div>
+
+        <div class="col-xs-12 col-md-6">
+          <div class="card-text-item">
+            <p class="card-text card-text-label">Status</p>
+            <p class="card-text">{{ character.status }}</p>
+          </div>
+        </div>
+
+        <div class="col-xs-12 col-md-12">
+          <div class="card-text-item">
+            <p class="card-text card-text-label">Location</p>
+            <p class="card-text">{{ character.location.name }}</p>
+          </div>
+        </div>
+
+        <div class="col-xs-12 col-xs-12 col-md-6">
+          <div class="card-text-item">
+            <p class="card-text card-text-label">Specie</p>
+            <p class="card-text">{{ character.species }}</p>
+          </div>
+        </div>
+
+        <div class="col-xs-12 col-md-6">
+          <div class="card-text-item">
+            <p class="card-text card-text-label">Episodes</p>
+            <p class="card-text">{{ character.episode.length }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

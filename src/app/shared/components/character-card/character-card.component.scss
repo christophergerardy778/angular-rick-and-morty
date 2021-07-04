@@ -1,0 +1,48 @@
+.card {
+  background-color: #383131;
+  border-radius: 18px;
+}
+
+.card-image {
+  display: flex;
+  border-radius: 18px 0 0 18px;
+}
+
+.card-text {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.card-text-label {
+  color: #B5B5B5;
+  font-weight: 700;
+}
+
+.shared {
+  padding: 0 24px;
+  color: white;
+}
+
+.container-card {
+  display: flex;
+  align-items: center;
+}
+
+@media screen and (max-width: 768px){
+  .card-image {
+    border-radius: 18px 18px 0 0;
+    width: 100%;
+  }
+
+  .card-text {
+    font-size: initial;
+  }
+
+  .container-card {
+    padding: 18px 8px;
+  }
+
+  .card-text-item {
+    margin-bottom: 18px;
+  }
+}

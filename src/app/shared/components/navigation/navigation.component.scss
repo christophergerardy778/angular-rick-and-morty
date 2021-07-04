@@ -1,0 +1,18 @@
+.spacer {
+  flex: 1 1 auto;
+}
+
+.mat-toolbar-padding  {
+  padding: 0 64px;
+  background-color: #2D2929;
+}
+
+@media screen and (max-width: 768px){
+  button {
+    display: none;
+  }
+
+  .mat-toolbar-padding {
+    padding: 0 24px;
+  }
+}

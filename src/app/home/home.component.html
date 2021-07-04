@@ -1,0 +1,79 @@
+<div class="cover-img">
+  <div class="cover-shadow">
+    <div class="row content">
+      <div class="col-xs-12 col-md-6 center-info-content">
+        <h1 class="cover-title">
+          Rick & Morty
+        </h1>
+
+        <p class="cover-description">
+          Después de haber estado desaparecido durante casi 20 años,
+          Rick Sánchez llega de imprevisto a la puerta de la casa de su hija Beth y se va a
+          vivir con ella y su familia utilizando el garaje como su laboratorio personal.
+        </p>
+      </div>
+
+      <div class="col-xs-12 col-md-6 image-content">
+        <img src="assets/portal.png" alt="" width="400" height="400">
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="sub-section">
+  <h2 class="sub-section-title">
+    Characters
+  </h2>
+
+  <div class="row">
+    <div class="col-xs-12 col-md-6 content-space" *ngFor="let character of characters">
+      <app-character-card [character]="character"></app-character-card>
+    </div>
+
+    <div class="col-xs-12 col-md-12 content-space">
+      <button mat-stroked-button class="super-button">
+        Show all characters
+      </button>
+    </div>
+  </div>
+</div>
+
+<div class="sub-section">
+  <h2 class="sub-section-title">
+    Episodes
+  </h2>
+
+  <h3 class="sub-section-subtitle content-space">
+    Season 1
+  </h3>
+
+  <div class="row">
+    <div class="col-xs-12 col-md-12 content-space-min" *ngFor="let episode of episodes">
+      <app-episode-card [episode]="episode"></app-episode-card>
+    </div>
+
+    <div class="col-xs-12 col-md-12 content-space">
+      <button mat-stroked-button class="super-button">
+        Show all episodes
+      </button>
+    </div>
+  </div>
+</div>
+
+<div class="sub-section">
+  <h2 class="sub-section-title">
+    Locations
+  </h2>
+
+  <div class="row">
+    <div class="col-xs-12 col-md-6 content-space" *ngFor="let location of locations">
+      <app-location-card [location]="location"></app-location-card>
+    </div>
+
+    <div class="col-xs-12 col-md-12 content-space">
+      <button mat-stroked-button class="super-button">
+        Show all locations
+      </button>
+    </div>
+  </div>
+</div>

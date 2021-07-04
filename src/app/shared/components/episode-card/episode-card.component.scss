@@ -1,0 +1,33 @@
+.card {
+  padding: 24px;
+  background-color: #383131;
+  border-radius: 18px;
+}
+
+.card-text-label {
+  color: #B5B5B5;
+  font-weight: 700;
+}
+
+.card-text {
+  color: white;
+}
+
+.text-mb-0 {
+  margin-bottom: 0;
+}
+
+.arrow-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.text-images {
+  margin-right: 18px;
+}
+
+.avatar img {
+  border-radius: 50%;
+}
+
