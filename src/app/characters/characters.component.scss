@@ -1,0 +1,23 @@
+.content {
+  padding: 0 64px;
+  margin-top: 36px;
+}
+
+.title {
+  font-size: 48px;
+  color: white;
+}
+
+.margin-card {
+  margin-top: 24px;
+}
+
+@media screen and (max-width: 768px) {
+  .title {
+    font-size: 36px;
+  }
+
+  .content {
+    padding: 0 24px;
+  }
+}

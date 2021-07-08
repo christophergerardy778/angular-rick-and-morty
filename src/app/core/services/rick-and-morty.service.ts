@@ -14,7 +14,11 @@ export class RickAndMortyService {
   constructor(private http: HttpClient) {}
 
   getCharacters(page: number) {
-    return this.http.get<ApiResponseModel<CharacterModel>>(`${environment.base_url}/character/?=${page}`);
+    return this.http.get<ApiResponseModel<CharacterModel>>(`${environment.base_url}/character/`, {
+      params: {
+        page
+      }
+    });
   }
 
   getCharacter(id: number) {

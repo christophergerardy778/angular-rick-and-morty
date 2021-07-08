@@ -7,11 +7,14 @@ import { CoreModule } from "./core/core.module";
 import { SharedModule } from "./shared/shared.module";
 import { HomeComponent } from './home/home.component';
 import { MaterialModule } from "./material/material.module";
+import { CharactersComponent } from './characters/characters.component';
+import {InfiniteScrollModule} from "ngx-infinite-scroll";
 
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent
+    HomeComponent,
+    CharactersComponent
   ],
   imports: [
     CoreModule,
@@ -19,7 +22,8 @@ import { MaterialModule } from "./material/material.module";
     AppRoutingModule,
     BrowserAnimationsModule,
     SharedModule,
-    MaterialModule
+    MaterialModule,
+    InfiniteScrollModule
   ],
   providers: [],
   bootstrap: [AppComponent]
