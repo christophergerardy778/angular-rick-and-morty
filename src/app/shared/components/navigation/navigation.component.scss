@@ -7,12 +7,30 @@
   background-color: #2D2929;
 }
 
+.menu-bar {
+  display: none;
+}
+
+.example-container {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
 @media screen and (max-width: 768px){
-  button {
+  .link-button {
     display: none;
   }
 
   .mat-toolbar-padding {
-    padding: 0 24px;
+    padding: 0 18px;
+  }
+
+  .menu-bar {
+    display: block;
   }
 }

@@ -1,23 +1,29 @@
 <mat-toolbar class="mat-toolbar-padding">
   <span>
-    <img src="assets/logo.png" width="134" height="50">
+    <img src="assets/logo.png" width="134" height="50" routerLink="/">
   </span>
 
   <span class="spacer"></span>
 
-  <button mat-button routerLink="/">
+  <button mat-button routerLink="/" class="link-button">
     Home
   </button>
 
-  <button mat-button routerLink="/characters">
+  <button mat-button routerLink="/characters" class="link-button">
     Characters
   </button>
 
-  <button mat-button>
+  <button mat-button class="link-button">
     Episodes
   </button>
 
-  <button mat-button>
+  <button mat-button class="link-button">
     Locations
+  </button>
+
+  <button mat-icon-button class="menu-bar">
+    <mat-icon>
+      menu
+    </mat-icon>
   </button>
 </mat-toolbar>
