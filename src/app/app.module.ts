@@ -8,13 +8,17 @@ import { SharedModule } from "./shared/shared.module";
 import { HomeComponent } from './home/home.component';
 import { MaterialModule } from "./material/material.module";
 import { CharactersComponent } from './characters/characters.component';
-import {InfiniteScrollModule} from "ngx-infinite-scroll";
+import { InfiniteScrollModule } from "ngx-infinite-scroll";
+import { EpisodesComponent } from './episodes/episodes.component';
+import { LocationsComponent } from './locations/locations.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    CharactersComponent
+    CharactersComponent,
+    EpisodesComponent,
+    LocationsComponent
   ],
   imports: [
     CoreModule,
