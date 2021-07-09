@@ -1,0 +1,15 @@
+<div class="sub-section">
+  <h2 class="sub-section-title">
+    Locations
+  </h2>
+
+  <div
+    class="row"
+    infinite-scroll
+    (scrolled)="getLocations()"
+  >
+    <div class="col-xs-12 col-md-6 content-space" *ngFor="let location of locations">
+      <app-location-card [location]="location"></app-location-card>
+    </div>
+  </div>
+</div>
