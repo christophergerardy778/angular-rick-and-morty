@@ -11,6 +11,7 @@ import { CharactersComponent } from './characters/characters.component';
 import { InfiniteScrollModule } from "ngx-infinite-scroll";
 import { EpisodesComponent } from './episodes/episodes.component';
 import { LocationsComponent } from './locations/locations.component';
+import {MatListModule} from "@angular/material/list";
 
 @NgModule({
   declarations: [
@@ -22,12 +23,13 @@ import { LocationsComponent } from './locations/locations.component';
   ],
   imports: [
     CoreModule,
-    BrowserModule.withServerTransition({ appId: 'serverApp' }),
+    BrowserModule.withServerTransition({appId: 'serverApp'}),
     AppRoutingModule,
     BrowserAnimationsModule,
     SharedModule,
     MaterialModule,
-    InfiniteScrollModule
+    InfiniteScrollModule,
+    MatListModule
   ],
   providers: [],
   bootstrap: [AppComponent]

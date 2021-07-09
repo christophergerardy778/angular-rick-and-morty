@@ -1,5 +1,5 @@
 <mat-toolbar class="mat-toolbar-padding">
-  <span>
+  <span class="cursor-pointer">
     <img src="assets/logo.png" width="134" height="50" routerLink="/">
   </span>
 
@@ -21,7 +21,7 @@
     Locations
   </button>
 
-  <button mat-icon-button class="menu-bar">
+  <button mat-icon-button class="menu-bar" (click)="toggleSideNav()">
     <mat-icon>
       menu
     </mat-icon>

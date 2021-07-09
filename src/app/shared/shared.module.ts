@@ -7,7 +7,7 @@ import { RouterModule } from "@angular/router";
 import { CharacterCardComponent } from './components/character-card/character-card.component';
 import { EpisodeCardComponent } from './components/episode-card/episode-card.component';
 import { LocationCardComponent } from './components/location-card/location-card.component';
-import {MatSidenavModule} from "@angular/material/sidenav";
+import { MatSidenavModule } from "@angular/material/sidenav";
 
 @NgModule({
   declarations: [

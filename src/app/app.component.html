@@ -1,3 +1,33 @@
-<app-navigation></app-navigation>
-<router-outlet></router-outlet>
-<app-footer></app-footer>
+<mat-sidenav-container>
+  <mat-sidenav role="navigation" #sidenav>
+    <mat-list>
+      <mat-list-item routerLink="/" (click)="sidenav.toggle()">
+        Home
+      </mat-list-item>
+
+      <mat-list-item routerLink="/characters" (click)="sidenav.toggle()">
+        Characters
+      </mat-list-item>
+
+      <mat-list-item routerLink="/episodes" (click)="sidenav.toggle()">
+        Episodes
+      </mat-list-item>
+
+      <mat-list-item routerLink="/locations" (click)="sidenav.toggle()">
+        Locations
+      </mat-list-item>
+    </mat-list>
+  </mat-sidenav>
+
+  <mat-sidenav-content>
+    <app-navigation
+      (toggleEmitter)="sidenav.toggle()"
+    ></app-navigation>
+
+    <router-outlet>
+    </router-outlet>
+
+    <app-footer>
+    </app-footer>
+  </mat-sidenav-content>
+</mat-sidenav-container>
