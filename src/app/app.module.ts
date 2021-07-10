@@ -12,6 +12,7 @@ import { InfiniteScrollModule } from "ngx-infinite-scroll";
 import { EpisodesComponent } from './episodes/episodes.component';
 import { LocationsComponent } from './locations/locations.component';
 import {MatListModule} from "@angular/material/list";
+import { EpisodeDetailComponent } from './episode-detail/episode-detail.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import {MatListModule} from "@angular/material/list";
     HomeComponent,
     CharactersComponent,
     EpisodesComponent,
-    LocationsComponent
+    LocationsComponent,
+    EpisodeDetailComponent
   ],
   imports: [
     CoreModule,

@@ -1,0 +1,25 @@
+.container {
+  margin-top: 48px;
+  padding: 0 64px;
+  max-width: 90%;
+}
+
+.section-title {
+  font-size: 48px;
+  color: white;
+}
+
+.space {
+  margin-top: 24px;
+}
+
+.sub-title {
+  color: #B5B5B5;
+  font-size: 36px;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    padding: 0 8px;
+  }
+}

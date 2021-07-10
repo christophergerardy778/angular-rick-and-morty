@@ -1,0 +1,22 @@
+<div class="container" *ngIf="episode">
+  <div class="row">
+    <div class="col-md-12 space">
+      <h1 class="section-title">
+        Episode
+      </h1>
+
+      <p class="space">Name: {{ episode.name }}</p>
+      <p>Air date: {{ episode.air_date }}</p>
+      <p>Code: {{ episode.episode }}</p>
+
+      <h2 class="sub-title space">
+        Characters
+      </h2>
+    </div>
+
+    <div class="col-xs-12 col-md-6 space" *ngFor="let character of characters">
+      <app-character-card [character]="character">
+      </app-character-card>
+    </div>
+  </div>
+</div>

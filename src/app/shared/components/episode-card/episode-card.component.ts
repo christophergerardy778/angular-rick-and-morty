@@ -1,17 +1,20 @@
-import {Component, Input, OnInit} from '@angular/core';
+import {Component, Input} from '@angular/core';
 import {EpisodeModel} from "../../../models/episode.model";
+import {Router} from "@angular/router";
 
 @Component({
   selector: 'app-episode-card',
   templateUrl: './episode-card.component.html',
   styleUrls: ['./episode-card.component.scss']
 })
-export class EpisodeCardComponent implements OnInit {
+export class EpisodeCardComponent {
 
   @Input()
   episode!: EpisodeModel;
 
-  constructor() { }
+  constructor(private readonly router: Router) { }
 
-  ngOnInit(): void {}
+  async goEpisodeDetail() {
+    await this.router.navigate(["/episode", this.episode.id])
+  }
 }

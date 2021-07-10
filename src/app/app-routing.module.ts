@@ -4,6 +4,7 @@ import { HomeComponent } from "./home/home.component";
 import { CharactersComponent } from "./characters/characters.component";
 import { EpisodesComponent } from "./episodes/episodes.component";
 import { LocationsComponent } from "./locations/locations.component";
+import {EpisodeDetailComponent} from "./episode-detail/episode-detail.component";
 
 const routes: Routes = [
   {
@@ -21,13 +22,17 @@ const routes: Routes = [
   {
     path: 'locations',
     component: LocationsComponent
+  },
+  {
+    path: 'episode/:id',
+    component: EpisodeDetailComponent
   }
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes, {
     initialNavigation: 'enabled',
-    scrollPositionRestoration: 'top'
+    scrollPositionRestoration: 'enabled'
   })],
   exports: [RouterModule]
 })

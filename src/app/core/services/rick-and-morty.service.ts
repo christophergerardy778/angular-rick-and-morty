@@ -22,7 +22,15 @@ export class RickAndMortyService {
   }
 
   getCharacter(id: number) {
-    return this.http.get(`${environment.base_url}/character/${id}`);
+    return this.http.get<CharacterModel>(`${environment.base_url}/character/${id}`);
+  }
+
+  getCharactersById(id_list: string) {
+    return this.http.get<CharacterModel[]>(`${environment.base_url}/character/${id_list}`);
+  }
+
+  getEpisode(episode_id: number) {
+    return this.http.get<EpisodeModel>(`${environment.base_url}/episode/${episode_id}`);
   }
 
   getEpisodesBySeason(episodeCode: EpisodeSeasons) {
